@@ -247,7 +247,7 @@
 							</article>
 
 						<!-- Contact -->
-							<article id="contacts">
+							<!-- <article id="contacts">
 								<h2 class="major">Contact</h2>
 								<form method="post" name="contactform" action="assets/php/form.php">
 									<div class="fields">
@@ -270,44 +270,38 @@
 									</ul>
 								</form>
 								<ul class="icons">
-									<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="https://www.linkedin.com/in/eyobg/" target="_blank" class="icon brands fa-linkedin" ><span class="label"></span></a></li>
-									<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-									<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="mailto:eyobghiday1@gmail.com" target="_blank" class="fa fa-envelope"><span class="label"></span></a></li>
 									<li><a href="/" class="fa fa-link"><span class="label"></span></a></li>
 									<li><a href="https://github.com/eyobghiday" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
-							</article>
+							</article> -->
 
 							<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form name="contactFormEmail" method="post">
-									<div class="input-row">
-									  <label>Name <em>*</em></label> 
-									  <input type="text" name="userName" required id="userName"> 
-									</div>
-									<div class="input-row">
-									  <label>Email <em>*</em></label> 
-									  <input type="email" name="userEmail" required id="userEmail"> 
-									</div>
-									<div class="input-row">
-									  <label>Phone <em>*</em></label> 
-									  <input type="text" name="userPhone" required id="userPhone">
-									</div>
-									<div class="input-row">
-									  <label>Message <em>*</em></label> 
-									 <textarea name="userMessage" required id="userMessage"> </textarea>
-									</div>
-									<div class="input-row">
-									  <input type="submit" name="send" value="Submit">
-									  <div class='success'>
-										<strong>Success</strong>
-									  </div>
-									</div>
+								<form onsubmit="return submitForm(this);">
+									<div class="fields">
+										<div class="field"> <input type="text" name="yourname" placeholder="Your Name" required/></div>
+									    <div class="field"> <textarea name="body" id="message" rows="4" placeholder="Compose" required></textarea> </div>
+								    </div>
+									<ul class="actions">
+										<li><input type="submit" value="submit" class="primary" /></li>
+										<li><input type="reset" value="clear" /></li>
+									</ul>
 								  </form>
-
+								<script>
+									function submitForm(form) {
+									window.open("mailto:eyobghiday1@gmail.com?subject=Introductory Email%20Email&body=Name:%20" + form.yourname.value + "%0A%0A" + form.body.value, '_self');
+									return false; /* cancel submit or else page reloads */
+								  }
+								  </script>
+							<div style="text-align:center">
+								<br>
+								<h5> Open for networking! </h5>
 								<ul class="icons">
 									<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
 									<li><a href="https://www.linkedin.com/in/eyobg/" target="_blank" class="icon brands fa-linkedin" ><span class="label"></span></a></li>
@@ -317,6 +311,8 @@
 									<li><a href="/" class="fa fa-link"><span class="label"></span></a></li>
 									<li><a href="https://github.com/eyobghiday" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
+							</div>
+
 							</article>
 
 						<!-- Elements -->
@@ -563,19 +559,22 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						
 						<!-- Articles -->
 							<article id="articles">
+
 								<h2 class="major">Publish</h2>
 								<span class="image main"><img src="images/publish.png" alt="" /></span>
 								<p><b>Below are few of the published papers, articles and other projects I wokred on.</b></p>
 								<ol>
 									<li>Asherloo, M., Ziheng Wu, Melody H., and Eyob Ghebreiesus. “Laser-Beam Powder Bed Fusion of Cost-Effective Non-Spherical Hydride-Dehydride Ti-6al-4v Alloy.” Additive Manufacturing 56 (2022): 102875. https://doi.org/10.1016/j.addma.2022.102875.  [<a href="https://doi.org/10.1016/j.addma.2022.102875" style="color: rgb(16, 132, 233)" target="_blank">Published paper</a>]</li>
 									<br>
-									<li>Eyob Ghebreiesus; James Szewczyk; Marek Jelen; Matt Tobin. “The IMT-22 Model for Hybrid-electric Regional Turboprop RFP (2022).” AIAA Design Competition. [October 20th 2022]. [<a href="/pdf/Eyob_et._al._ Hybrid_Aircraft_Design_(2022).pdf" style="color: rgb(16, 132, 233)" target="_blank">pdf</a>]</li>
+									<li>Eyob Ghebreiesus; James Szewczyk; Marek Jelen; Matt Tobin. “The IMT-22 Model for Hybrid-electric Regional Turboprop RFP (2022).” Hybrid RFP Design Competition. [October 20th 2022]. [<a href="/pdf/Eyob_et._al._ Hybrid_Aircraft_Design_(2022).pdf" style="color: rgb(16, 132, 233)" target="_blank">RFP pdf</a>]</li>
 									<br>
-									<li>Scarlett Spacehawks IIT, NASA RMC et. al. “NASA RMC Lunar Botics design and manufacturing rover.” National Aeronautics and Space Administration. Illinois Tech, October 11, 2020. [<a href="/pdf/Scarlet Spacehawks RMC 2021 System Engineering Report.pdf" style="color: rgb(16, 132, 233)" target="_blank">pdf</a>] and [<a href="/pdf/Scarlet Spacehawks RMC 2021 IPRO Poster 2021.pdf" style="color: rgb(16, 132, 233)" target="_blank">Design Portfolio</a>]</li>
+									<li>Scarlett Spacehawks IIT, NASA RMC et. al. “NASA RMC Lunar Botics design and manufacturing rover.” National Aeronautics and Space Administration. Illinois Tech, October 11, 2020. [<a href="/pdf/Scarlet Spacehawks RMC 2021 System Engineering Report.pdf" style="color: rgb(16, 132, 233)" target="_blank">Systems report</a>] and [<a href="/pdf/Scarlet Spacehawks RMC 2021 IPRO Poster 2021.pdf" style="color: rgb(16, 132, 233)" target="_blank">Design Portfolio</a>]</li>
+									<br>
+									<li>AIAA DBF Illinois Institute of Technology Design Report. The 2020-21 AIAA-DBF Competition Illinois Tech, April 17, 2021. [<a href="/pdf/2020_2021 DBF_Illinois_Institute_of_Technology_DESIGN_REPORT.pdf" style="color: rgb(16, 132, 233)" target="_blank">Full report</a>]</li>
 									<br>
 									<li>Eyob Ghebreiesus, MEng., Amir Mostafaei, PhD. “On Utilising Laser-Beam Powder Bed Fusion of Ti-6al-4v Alloy.” Additive Manufacturing and Material Science. Illinois Tech [Aug, 12 2022]. [<a href="/pdf/Eyob_Ti-64_NSF_Research_Internship(2021).pdf" style="color: rgb(16, 132, 233)" target="_blank">Research pdf</a>]</li>
 									<br>
-									<li>Eyob Ghebreiesus, Jake McMahon, Liam Palmetieer et. al. “NASA CSLI Hurricane Satellite Design competition(2021). ”The NASA Cubesat Launch Initiative and Systems Design. [May, 04 2022]. [<a href="/pdf/NASA_CSLI_Hurricane_Satellite_Design_(2021).pdf" style="color: rgb(16, 132, 233)" target="_blank">pdf</a>]</li>
+									<li>Eyob Ghebreiesus, Jake McMahon, Liam Palmetieer et. al. “NASA CSLI Hurricane Satellite Design competition(2021). ”The NASA Cubesat Launch Initiative and Systems Design. [May, 04 2022]. [<a href="/pdf/NASA_CSLI_Hurricane_Satellite_Design_(2021).pdf" style="color: rgb(16, 132, 233)" target="_blank">design pdf</a>]</li>
 									<br>
 									<li>Eyob Ghebreiesus; James Szewczyk;et. al.. “A MATLAB Simulink model for the IMT-22 for the AIAA Hybrid Aircraft (2022).” AIAA Design Competition. [Decmber 1st 2022]. [<a href="/pdf/Eyob_et._al._ Hybrid_Aircraft_Simulink_(2022).pdf" style="color: rgb(16, 132, 233)" target="_blank">Simulink pdf</a>]</li>
 									<br>
