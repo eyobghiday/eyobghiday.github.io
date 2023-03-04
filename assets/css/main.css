@@ -1131,14 +1131,14 @@ input, select, textarea {
 		}
 
 		#bg:before {
-			-moz-transition: background-color 2.5s ease-in-out;
-			-webkit-transition: background-color 2.5s ease-in-out;
-			-ms-transition: background-color 2.5s ease-in-out;
-			transition: background-color 2.5s ease-in-out;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
+			-moz-transition: background-color 1s ease-in-out;
+			-webkit-transition: background-color 1s ease-in-out;
+			-ms-transition: background-color 1s ease-in-out;
+			transition: background-color 1s ease-in-out;
+			-moz-transition-delay: 0.3s;
+			-webkit-transition-delay: 0.3s;
+			-ms-transition-delay: 0.3s;
+			transition-delay: 0.3s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
 			background-size: auto,
  256px 256px;
@@ -1154,10 +1154,10 @@ input, select, textarea {
 			-webkit-transform: scale(1.125);
 			-ms-transform: scale(1.125);
 			transform: scale(1.125);
-			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
-			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
-			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
-			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
+			-moz-transition: -moz-transform 0.2s ease-in-out, -moz-filter 0.2s ease-in-out;
+			-webkit-transition: -webkit-transform 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
+			-ms-transition: -ms-transform 0.2s ease-in-out, -ms-filter 0.2s ease-in-out;
+			transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
 			background-image: url("../../images/bg1.jpeg");
 			background-position: center;
 			background-size: cover;
